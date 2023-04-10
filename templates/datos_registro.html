@@ -1,0 +1,32 @@
+{% extends "index.html" %}
+{% block contenido %}
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>ID_Usuario</th>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Campus</th>
+                <th>Area</th>
+                <th>Email</th>
+                <th>ID_Rol</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for registro in lista %}
+            <tr>
+                 <td>{{registro.id_usuario}}</td>
+                <td>{{registro.nombre}}</td>
+                <td>{{registro.apellidos}}</td>
+                <td>{{registro.campus}}</td>
+                <td>{{registro.area}}</td>
+                <td>{{registro.email}}</td>
+                <td>{{registro.id_rol}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

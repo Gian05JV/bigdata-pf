@@ -1,0 +1,35 @@
+
+{% extends "index.html" %}
+{% block contenido %}
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Serial</th>
+                <th>Tipo</th>
+                <th>Marca</th>
+                <th>MAC</th>
+                <th>Antivirus</th>
+                <th>Fecha de caducidad</th>
+                <th>ID_Usuario</th>
+                <th>Modelo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for registro in lista %}
+            <tr>
+               <td>{{lista[0]}}</td>
+                <td>{{lista[1] .tipo}}</td>
+                <td>{{lista[2].marca}}</td>
+                <td>{{lista[4].mac}}</td>
+                <td>{{lista[3].antivirus}}</td>
+                <td>{{lista[5].f_caducidad}}</td>
+                <td>{{lista[5].id_usuario}}</td>
+                <td>{{lista[5].modelo}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

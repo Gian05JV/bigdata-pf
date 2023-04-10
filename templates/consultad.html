@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro de dispositivos insertados</title>
+    <style>
+        .tablau{
+            width: 100%;
+            height: 25%;
+            border: 1px solid #000;
+            border-collapse: collapse;
+            font-family: arial;
+            border-radius: 50%;
+        }
+        th, td{
+            width: 0%;
+            text-align: center;
+            border: 1px solid #000;
+            padding: 0.3em;
+        }
+        td{
+            text-align:center;
+            background-color:#DEF3CA;
+            border: 2px solid #E7EFE0;
+            -moz-border-radius:2px;
+            -webkit-border-radius:2px;
+            border-radius:2px;
+            color:#666;
+            text-shadow:1px 1px 1px #fff;
+        }
+
+        th{
+            padding:15px;
+             color:#fff;
+             text-shadow:1px 1px 1px #568F23;
+             border:1px solid #93CE37;
+             border-bottom:3px solid #9ED929;
+             background-color:#9DD929;
+             background:-webkit-gradient(
+             linear,
+             left bottom,
+             left top,
+             color-stop(0.02, rgb(123,192,67)),
+             color-stop(0.51, rgb(139,198,66)),
+             color-stop(0.87, rgb(158,217,41))
+             );
+             background: -moz-linear-gradient(
+             center bottom,
+             rgb(123,192,67) 2%,
+             rgb(139,198,66) 51%,
+             rgb(158,217,41) 87%
+             );
+             -webkit-border-top-left-radius:5px;
+             -webkit-border-top-right-radius:5px;
+             -moz-border-radius:5px 5px 0px 0px;
+             border-top-left-radius:5px;
+             border-top-right-radius:5px;
+        }
+
+        .td1{
+            background: #EFEFEF;
+        }
+    </style>
+{% block contenido %}
+<div>
+    <table class="tablau">
+        <thead>
+            <tr>
+                <th>ID_Dispositivo</th>
+                <th>Tipo de dispositivo</th>
+                <th>Marca de dispositivo</th>
+                <th>Dirección MAC</th>
+                <th>Antivirus</th>
+                <th>Fecha de caducidad</th>
+                <th>ID_Usuario</th>
+                <th>Modelo</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for disp in lista1 %}
+            <tr>
+                <td class="td1">{{disp.id_dispositivo}}</td>
+                <td>{{disp.tipo}}</td>
+                <td class="td1">{{disp.marca}}</td>
+                <td>{{disp.mac}}</td>
+                <td class="td1">{{disp.antivirus}}</td>
+                <td>{{disp.f_caducidad}}</td>
+                <td class="td1">{{disp.id_usuario}}</td>
+                <td>{{disp.modelo}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

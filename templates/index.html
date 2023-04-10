@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <style>
+        .imgut{
+            width: 244px;
+            height: 348px;
+        }
+
+        .uttt{
+            width: 150px;
+            height: 100px;
+        }
+
+        .sub-banner-image {
+            border-radius: 67% 33% 28% 72% / 59% 51% 49% 41%;
+            text-align: center;
+            max-width: 450px;
+            max-height: 450px;
+            background: var(--gradient-color-banner);
+            margin-top: 80px;
+        }
+
+.sub-banner-image img {
+  position: absolute;
+  top: -162px;
+  right: 0px;
+}
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="author" content="W3Layouts.com">
+    <link href="https://wp.w3layouts.com/eduschool/wp-content/themes/eduschool/assets/css/style-liberty.css"
+        rel="stylesheet">
+
+</head>
+
+<body id="top-gap-fixed-header"
+    class="home page-template page-template-page-templates page-template-template-homepage page-template-page-templatestemplate-homepage-php page page-id-8">
+
+        <header id="site-header" class="main-header fixed-top">
+            <div class="container w3HeaderLogoEd">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <h1><a class="navbar-brand" href="#">
+                            <i class="fas fa-graduation-cap"></i><img class="uttt" src="https://www.uttt.edu.mx/img/about/logouttt.png"></a></h1>
+
+
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                        <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarScroll">
+                        <ul id="menu-main-menu" class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll ">
+                            <li id="menu-item-22"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-8 current_page_item nav-item nav-item-22">
+                               <b><a href="#">Inicio</a></b>
+                            </li>
+
+                            <li id="menu-item-28"
+                                class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-28">
+                                <b><a href="/login">Iniciar Sesión</a></b>
+                            </li>
+                            </li>
+
+                            <li id="menu-item-27"
+                                class="menu-item menu-item-type-post_type menu-item-object-page nav-item nav-item-27">
+                                <b><a href="/register">Registrar</a></b>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </nav>
+            </div>
+
+        </header>
+        <!-- Homepage Banner section -->
+
+        <section id="home" class="w3l-banner py-5">
+            <style>
+                .w3l-banner {
+                    background: url(https://www.uttt.edu.mx/img/Alumnos3.jpg);
+                }
+            </style>
+            <div class="banner-content">
+                <div class="container py-4 HomePageBanner">
+                    <div class="row align-items-center pt-sm-5 pt-4">
+                        <div class="col-md-6">
+                            <h3 class="mb-lg-4 mb-3">
+                                Universidad Tecnológica de<span class="d-block">Tula-Tepeji</span>
+                            </h3>
+                            <p class="banner-sub">De la cultura y la ciencia, crearemos el futuro </p>
+
+                        </div>
+                        <div class="col-md-6 right-banner-2 text-end position-relative mt-md-0 mt-5">
+                            <div class="sub-banner-image mx-auto">
+                                <img  class="imgut" src="https://static.wixstatic.com/media/674350_db8cdf9f3a5e42c8b5bde6260c399a7d~mv2.png/v1/fill/w_348,h_244,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/674350_db8cdf9f3a5e42c8b5bde6260c399a7d~mv2.png"
+                                     alt=" " align="center">
+                            </div>
+                            <div class="banner-style-1 position-absolute">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% block contenido %}{% endblock %}
+</body>
+</html>
+

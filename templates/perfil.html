@@ -1,0 +1,217 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Perfil</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            font-family: "Roboto", Arial;
+        }
+
+        .container{
+            height: 500px;
+            width: 1348px;
+            align: center;
+            position: absolute;
+            z-index: 7;
+
+        }
+
+        .encabezado{
+        width: 1348px;
+        height: 500px;
+        background: none;
+        position: absolute;
+        z-index: 1;
+        }
+
+        .foto{
+        width: 210px;
+        height: 200px;
+        background: none;
+        position: relative;
+        z-index: 4;
+        margin-left: 60px;
+        top: 250px;
+        border-color: none;
+        border-radius: 50%;
+
+        }
+
+        .la{
+        background: #FFFFFF;
+        width: 1000px;
+        height: 300px;
+        }
+
+        .izq{
+        float: left;
+        background: #ebe8e8;
+        width: 300px;
+        height: 1300px;
+        margin-left: 24px;
+        margin-bottom: 20px;
+        position: relative;
+        z-index: 3;
+        box-shadow: 2px 2px 5px #999;
+        }
+
+        .cont1{
+        float: right;
+        width: 900px;
+        height: 150px;
+        margin-right: 50px;
+        display: flex;
+        position: relative;
+        z-index: 4;
+        background: #ebe8e8;
+        box-shadow: 2px 2px 5px #999;
+        }
+
+        .cont2{
+        float: right;
+        width: 900px;
+        height: 150px;
+        margin-right: 50px;
+        margin-top: 10px;
+        position: relative;
+        z-index: 4;
+        background: #ebe8e8;
+        box-shadow: 2px 2px 5px #999;
+        }
+
+        .cont3{
+        float: right;
+        width: 900px;
+        height: 980px;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 4;
+        background: #ebe8e8;
+        box-shadow: 2px 2px 5px #999;
+        }
+
+        input[type=submit] {
+        border: none;
+        background-color: #3CBC8D;
+        color: white;
+        cursor: pointer;
+        font-size: 20px;
+        margin-left: 870px;
+        width: 200px;
+        height: 30px;
+        border-radius: 10%;
+        }
+
+        textarea {
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        }
+
+        label{
+        margin-top: 10px;
+        margin-left: 50px;
+        font-family: arial;
+        }
+
+        ::placeholder {
+        color: grey;
+        font-size: 1.5em;
+        }
+
+    ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #303F9F;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: #243080;
+}
+
+.cont_menu{
+    height: 40px;
+    width: 1500px;
+}
+
+.active {
+    background-color: #243080;
+}
+
+.imgf{
+    margin-top: 700px;
+    position: absolute;
+    width: 1350px;
+    height: 1500;
+}
+    </style>
+
+</head>
+
+<body>
+<div class="container">
+    <img class="imgf" src="https://www.uttt.edu.mx/img/Alumnos3.jpg">
+    <div class="encabezado">
+        <img src="https://www.uttt.edu.mx/images/ProgramasEduc.jpg" width="1348px" height="400px">
+        <!--<img src="{{url_for('static', filename='1.jpg')}}">-->
+        <nav class="menu">
+                <ul>
+
+                    <li><a href="/cerrar_sesion">Cerrar sesión</a></li>
+
+                    <li><a href="/consultar">Consultar datos de usuarios</a></li>
+                    <li><a href="/consultard">Consultar datos de dispositivos</a></li>
+                    <li><a href="/rdispositivo">Registrar dispositivo</a></li>
+                 </ul>
+            </nav>
+        <header>
+
+        </header>
+    </div>
+
+
+    <div class="foto">
+        <img src="/static/ic.png" wdith="200px" height="200px">
+    </div>
+
+    <div class="la"></div>
+
+    <div class="izq"></div>
+
+    <div>
+        <div class="cont1"></div>
+        <div class="cont2"></div>
+        <div class="cont3"></div>
+    </div>
+</div>
+</body>
+</html>
