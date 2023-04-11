@@ -48,7 +48,6 @@ requests==2.27.1
 SecretStorage==3.3.3
 six==1.16.0
 systemd-python==235
-ufw==0.36.1
 unattended-upgrades==0.1
 urllib3==1.26.9
 usb-creator==0.3.7
