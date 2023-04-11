@@ -1,7 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 from pymongo import MongoClient
 import monitoreo
+import os
 
+port = int(os.environ.get('PORT', 5000))
 app = Flask(__name__)
 monitoreo.create_dash(app)
 client = MongoClient('mongodb+srv://20300150:Gian05Ju@cluster0.fswdxhi.mongodb.net/test')
@@ -59,4 +61,4 @@ def dash_temp():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=port)
