@@ -11,7 +11,6 @@ distro==1.7.0
 duplicity==0.8.22
 fasteners==0.17.3
 future==0.18.2
-gyp==0.1
 httplib2==0.20.4
 idna==3.3
 importlib-metadata==4.6.4
