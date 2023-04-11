@@ -8,7 +8,6 @@ colorama==0.4.5
 cryptography==3.4.8
 dbus-python==1.2.18
 distro==1.7.0
-distro-info==1.1+ubuntu1
 duplicity==0.8.22
 fasteners==0.17.3
 future==0.18.2
