@@ -1,12 +1,16 @@
 bcrypt==3.2.0
 blinker==1.4
+Brlapi==0.8.4
 certifi==2022.6.15
+cffi==1.15.1
 chardet==4.0.0
+chrome-gnome-shell==0.0.0
 click==8.0.3
 colorama==0.4.5
 command-not-found==0.3
 cryptography==3.4.8
 cupshelpers==1.0
+dblatex==0.3.12
 dbus-python==1.2.18
 defer==1.0.6
 distro==1.7.0
@@ -38,6 +42,7 @@ pexpect==4.8.0
 Pillow==9.2.0
 ptyprocess==0.7.0
 pycairo==1.20.1
+pycparser==2.21
 pycups==2.0.1
 PyGObject==3.42.2
 PyJWT==2.4.0
