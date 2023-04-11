@@ -49,7 +49,6 @@ SecretStorage==3.3.3
 six==1.16.0
 systemd-python==235
 urllib3==1.26.9
-usb-creator==0.3.7
 vboxapi==1.0
 wadllib==1.3.6
 xdg==5
