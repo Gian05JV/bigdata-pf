@@ -4,7 +4,7 @@ import monitoreo
 
 app = Flask(__name__)
 monitoreo.create_dash(app)
-client = MongoClient('mongodb://192.168.115.31:27017/')
+client = MongoClient('mongodb://192.168.0.13:27017/')
 db = client.dbisesion
 users = db.users
 
