@@ -52,7 +52,9 @@ def create_dash(flask_app):
         ]),
         html.Div(style={'width': '99%', 'display': 'inline-block', 'padding': '0 20'}, children=[
             dcc.Graph(id='piechart')
-        ])
+        ]),
+        html.Hr(),
+        html.H6('Utilizando técnicas de procesamiento de texto y análisis de frecuencia de palabras, se identifican las palabras ofensivas más utilizadas en el contexto del proyecto. Esto puede proporcionar una visión clara de las palabras que son más comunes en el lenguaje ofensivo y que podrían ser el foco principal de atención.', style={'textAlign': 'center', 'color': '#7FDBFF'})
     ])
 
     #callbacks
