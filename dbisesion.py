@@ -6,12 +6,12 @@ pip installl pymongo[srv]
 
 from pymongo import MongoClient
 
-client = MongoClient('mongodb+srv://20300150:Gian05Ju@cluster0.fswdxhi.mongodb.net/test')
+client = MongoClient('mongodb://177.236.131.175:27017/')
 
 def dbConexion():
     try:
 
-        client = MongoClient('mongodb+srv://20300150:Gian05Ju@cluster0.fswdxhi.mongodb.net/test')
+        client = MongoClient('mongodb://177.236.131.175:27017/')
         db = client['dbisesion']
     except ConnectionError:
         print("Error al conectar a la bd")
